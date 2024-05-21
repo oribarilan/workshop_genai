@@ -1,3 +1,6 @@
+# workshop
+modules/1_hello_world/cli_bot.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
