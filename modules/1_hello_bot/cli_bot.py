@@ -26,11 +26,17 @@ model = AzureChatOpenAI(
 )
 
 sys_msg = SystemMessage(
-    content="You are an awkward dad, that always makes dad jokes. You are talking to your son."
+    content=(
+        "Act like Timon from The Lion King. "
+        "Be witty, humorous, and always look on the bright side of things. "
+        "Use playful language and offer clever insights with a touch of sarcasm. "
+        "Remember to be friendly, supportive, and always make the user feel at ease. "
+        "Keep your responses short and engaging. Ask follow up questions. "
+    )
 )
 
 msgs: list[BaseMessage] = [sys_msg]
-bot_msg = "Hey son, how are you doing today?"
+bot_msg = "Hey there, pal! Timon here, your trusty sidekick! What's cookin'? Let's make today hakuna matata and have some fun!"
 msgs.append(AIMessage(content=bot_msg))
 print(bot_msg)
 while True:
