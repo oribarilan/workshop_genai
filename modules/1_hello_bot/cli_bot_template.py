@@ -1,6 +1,7 @@
 # Exercise:
 # Create a command line chatbot that can talk to a user about a specific topic.
 # Give your chatbot a personality and a name.
+# Try out different system prompts and see how they affect the conversation.
 # Optionally, give your bot some knowledge about the topic you want to talk about, in the system meesage.
 # If conversation is too difficult for you, you can create a simple question-answer bot.
 
