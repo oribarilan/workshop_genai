@@ -4,11 +4,11 @@ This is a workshop on Applied Generative AI. We will focus on practical applicat
 The content of this repository is not meant to be self-served. It is meant to be used in conjunction with the workshop.
 Enjoy the workshop!
 
-## Resource
+## Azure Resources
 
-We will use Azure OpenAI Studio for this workshop.
+We will use Azure OpenAI for this workshop.
 Make sure you have a valid Azure subscription with credits, and an Azure OpenAI resource set up.
-Deploy 
+Once you have the set, you can follow the instructions below to deploy a model.
 
 1. Go to [Azure OpenAI Studio](https://oai.azure.com/portal)
 2. Click "Deployments"
@@ -24,16 +24,25 @@ If you do choose to set up your local environment, please follow the manual inst
 
 ### Dev Containers (Recommended)
 1. Docker
+    
     a. Install Docker Desktop: https://www.docker.com/products/docker-desktop
+    
     b. Validate the installation by running the following command in your terminal:
     ```bash
     docker --version
     ```
     c. Get to know docker a bit using this walkgthrough (Optional) https://docs.docker.com/guides/walkthroughs/run-a-container/
+
 2. Visual Studio Code
+
     a. Install Visual Studio Code: https://code.visualstudio.com/
+
     b. Install the Dev-Containers extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
-    c. Open Visual Studio Code and click on the green icon on the bottom left corner. Select "Remote-Containers: Open Folder in Container" and select the folder where you have cloned the repository.
+
+    c. In Visual Studio Code, open the command pallette (Cmd/Ctrl+Shift+P) and run the command dev "Dev Containers: Open Folder in Container"
+
+    d. Wait until the container is built and the workspace is opened in the container.
+
 3. That's it! (The magic of dev-containers 😉)
 
 ### Manual Installation (Not recommended)
@@ -41,29 +50,43 @@ If you do choose to set up your local environment, please follow the manual inst
 Skip this if you are using dev-containers.
 
 1. Python
+    
     a. You will need a Python 3.9 environment. You can install it globally or use a virtual environment, but make sure you are using Python 3.9.
+    
     b. Install Python 3.9.18: https://www.python.org/downloads/
+    
     c. Validate:
     ```bash
     python --version
     ```
+
 2. Jupyter Notebook
-    a. Install Jupyter Notebook: https://jupyter.org/install
+
+    a. Install [Jupyter Notebook](https://jupyter.org/install)
+
     b. Validate:
     ```bash
     jupyter --version
     ```
+
 3. Install the required Python packages
+
     a. Execute
     ```bash
     pip install -r requirements.txt
     ```
+
     b. Validate:
     ```bash
     python -c "import langchain; print(langchain.__version__)"
     ```
-4. Just command runner
-    a. Install Just [https://](https://github.com/casey/just)
+
+4. Install the required VS Code extensions (found in `devcontainer.json`)
+
+5. Just command runner
+
+    a. Install [Just](https://github.com/casey/just)
+
     b. Validate:
     ```bash
     just --version
