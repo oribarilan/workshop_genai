@@ -51,11 +51,10 @@ Skip this if you are using dev-containers.
 
 1. Python
     
-    a. You will need a Python 3.9 environment. You can install it globally or use a virtual environment, but make sure you are using Python 3.9.
+    a. You will need a [Python 3.9](https://www.python.org/downloads/) environment. You can install it globally or use a virtual environment, but make sure you are using Python 3.9.
+    If you do this manually, I strongly suggest using [pyenv](https://github.com/pyenv/pyenv)
     
-    b. Install Python 3.9.18: https://www.python.org/downloads/
-    
-    c. Validate:
+    b. Activate your python 3.9 environment and validate:
     ```bash
     python --version
     ```
