@@ -37,11 +37,16 @@ If you do choose to set up your local environment, please follow the manual inst
 
     a. Install Visual Studio Code: https://code.visualstudio.com/
 
+    b. On windows, please add this to your user-settings json file: `"dev.containers.forwardWSLServices": false`
+    (or with GUI: `ctrl+shift+p` --> enter this in the search box: `"dev.containers.forwardWSLServices"` and uncheck it. restart VS Code afterwards.)
+
     b. Install the Dev-Containers extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
-    c. In Visual Studio Code, open the command pallette (Cmd/Ctrl+Shift+P) and run the command dev "Dev Containers: Open Folder in Container"
+    c. Clone this repository to your local machine.
 
-    d. Wait until the container is built and the workspace is opened in the container.
+    d. In Visual Studio Code, open the command pallette (Cmd/Ctrl+Shift+P) and run the command dev "Dev Containers: Open Folder in Container"
+
+    f. Wait until the container is built and the workspace is opened in the container.
 
 3. That's it! (The magic of dev-containers 😉)
 
