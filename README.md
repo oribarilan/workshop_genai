@@ -31,22 +31,27 @@ If you do choose to set up your local environment, please follow the manual inst
     ```bash
     docker --version
     ```
-    c. Get to know docker a bit using this walkgthrough (Optional) https://docs.docker.com/guides/walkthroughs/run-a-container/
+    c. (Optional) Get to know docker a bit using this walkthrough https://docs.docker.com/guides/walkthroughs/run-a-container/
 
 2. Visual Studio Code
 
     a. Install Visual Studio Code: https://code.visualstudio.com/
 
-    b. On windows, please add this to your user-settings json file: `"dev.containers.forwardWSLServices": false`
-    (or with GUI: `ctrl+shift+p` --> enter this in the search box: `"dev.containers.forwardWSLServices"` and uncheck it. restart VS Code afterwards.)
+    b. Windows Only step
+    
+    Add this to your user-settings json file: `"dev.containers.forwardWSLServices": false`
+    
+    Or, using the GUI: `ctrl+shift+p` --> enter this in the search box: `"dev.containers.forwardWSLServices"` and uncheck it. restart VS Code afterwards.
 
-    b. Install the Dev-Containers extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+    c. Install the Dev-Containers extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
-    c. Clone this repository to your local machine.
+    d. Clone this repository to your local machine.
 
-    d. In Visual Studio Code, open the command pallette (Cmd/Ctrl+Shift+P) and run the command dev "Dev Containers: Open Folder in Container"
+    e. In Visual Studio Code, open the command pallette (Cmd/Ctrl+Shift+P) and run the command dev "Dev Containers: Open Folder in Container"
 
-    f. Wait until the container is built and the workspace is opened in the container.
+    f. In the small pop-up, click the `(show logs)` link to enjoy the show. 😄
+
+    g. Wait until the container is built and the workspace is opened in the container.
 
 3. That's it! (The magic of dev-containers 😉)
 
