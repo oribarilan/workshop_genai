@@ -41,7 +41,9 @@ If you do choose to set up your local environment, please follow the manual inst
     
     Add this to your user-settings json file: `"dev.containers.forwardWSLServices": false`
     
-    Or, using the GUI: `ctrl+shift+p` --> enter this in the search box: `"dev.containers.forwardWSLServices"` and uncheck it. restart VS Code afterwards.
+    Or, using the GUI: `ctrl+shift+p` --> `Preferences: Open User Settings` --> enter this in the search box: `"dev.containers.forwardWSLServices"` and uncheck it. restart VS Code afterwards.
+
+    Consider turning this back to `true` after the workshop, if required.
 
     c. Install the Dev-Containers extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
