@@ -1,15 +1,14 @@
 import os
 import random
-from dotenv import load_dotenv
 
-from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import PydanticOutputParser
-from pydantic import BaseModel, Field
-from langchain_openai import AzureChatOpenAI
-from langchain_core.runnables import Runnable
+from dotenv import load_dotenv
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.messages import BaseMessage
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import PydanticOutputParser
+from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
+from langchain_core.runnables import Runnable
+from langchain_openai import AzureChatOpenAI
+from pydantic import BaseModel, Field
 
 
 class FunFact(BaseModel):
@@ -20,7 +19,7 @@ class FunFact(BaseModel):
 class InMemoryHistory(BaseChatMessageHistory, BaseModel):
     messages: list[BaseMessage] = Field(default_factory=list)
 
-    def add_messages(self, messages: list[BaseMessage]) -> None:
+    def add_messages(self, messages: list[BaseMessage]) -> None:  # type: ignore
         self.messages.extend(messages)
 
     def clear(self) -> None:

@@ -1,12 +1,8 @@
 {
     "name": "Applied GenAI Workshop Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.9-bullseye",
     "postCreateCommand": "sh ./.devcontainer/post_create.sh",
-    "features": {
-        "ghcr.io/guiyomh/features/just:0": {
-            "version": "1.26.0"
-        }
-    },
+    "features": { },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -16,8 +12,7 @@
                 "njqdev.vscode-python-typehint",
                 "ms-toolsai.jupyter",
                 "charliermarsh.ruff",
-                "formulahendry.code-runner",
-                "nefrob.vscode-just-syntax"
+                "formulahendry.code-runner"
             ]
         }
     }

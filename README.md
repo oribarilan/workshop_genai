@@ -33,6 +33,10 @@ If you do choose to set up your local environment, please follow the manual inst
     ```
     c. (Optional) Get to know docker a bit using this walkthrough https://docs.docker.com/guides/walkthroughs/run-a-container/
 
+    d. Windows users: Please run `wsl --update` in the terminal as an administrator. This will update your WSL2 kernel to the latest version.
+    If you experience issues, try referring this: [Get started: Prep Windows for containers
+    ](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce)
+
 2. Visual Studio Code
 
     a. Install Visual Studio Code: https://code.visualstudio.com/
